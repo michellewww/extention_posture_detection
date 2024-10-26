@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Posture Detection",
+    "version": "1.0",
+    "description": "Requests webcam access, takes a photo every 10 seconds, and stores it in local storage.",
+    "permissions": ["storage"],
+    "host_permissions": ["<all_urls>"],
+    "options_page": "options.html",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
